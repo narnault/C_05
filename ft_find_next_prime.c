@@ -32,7 +32,7 @@ int     ft_find_next_prime(int nb)
     int j;
     
     i = 0;
-    j = nb + 1;
+    j = nb;
     while (i == 0)
     {
         i = prime(j);
