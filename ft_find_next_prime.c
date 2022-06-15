@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int     prime(int nb)
-{
+int     prime(int nb) {
+    
     int i;
     int n;
     
@@ -15,8 +15,8 @@ int     prime(int nb)
     i = 0;
     if (nb <= 1)
         return (0);
-    while (n < nb)
-    {
+    while (n < nb) {
+        
         i = nb % n;
         if (i == 0)
           return (0);
@@ -26,23 +26,23 @@ int     prime(int nb)
     return (nb);
 }
 
-int     ft_find_next_prime(int nb)
-{
+int     ft_find_next_prime(int nb) {
+    
     int i;
     int j;
     
     i = 0;
     j = nb;
-    while (i == 0)
-    {
+    while (i == 0) {
+        
         i = prime(j);
         j++;
     }
     return (i);
 }
 
-int main()
-{
+int main() {
+    
         int nb = 3;
         printf("%i", ft_find_next_prime(nb));
 }
