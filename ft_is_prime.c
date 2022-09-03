@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int     prime(int nb)
+int     ft_is_prime(int nb)
 {
     int i;
     int n;
@@ -23,7 +23,7 @@ int     prime(int nb)
         i = 0;
         n = n + 2;
     }
-    return (0);
+    return (1);
 }
 
 int main()
